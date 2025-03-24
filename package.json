@@ -13,7 +13,6 @@
     "watch": "ng build --watch --configuration development"
   },
   "author": "Rahul Rajesh <rahulrajeshrr365@gmail.com>",
-  "private": true,
   "dependencies": {
     "@angular/animations": "^19.0.0",
     "@angular/common": "^19.0.0",
