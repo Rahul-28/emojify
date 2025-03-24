@@ -20,7 +20,7 @@ export const sheetRows = 61;
  * - Remove unnecessary properties from the raw data.
  * - Search and retrieve emoji images.
  */
-export default class EmojiData {
+export class EmojiData {
   // Map to quickly find an emoji by its short name.
   private emojiValMap: Map<string, IEmoji> = new Map();
 

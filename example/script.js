@@ -1,6 +1,6 @@
-import * as emoji from 'emojify';
+import { EmojiData } from 'emojify';
 
-const temp = new emoji.EmojiData();
+const temp = new EmojiData();
 
 const str = 'I heart Pizza';
 
