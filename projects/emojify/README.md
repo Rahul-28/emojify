@@ -1,64 +1,60 @@
-# Emojify
+# Emoji Data Helper for TypeScript
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+Enhance your TypeScript projects with seamless emoji integration using this comprehensive helper library. Designed to work alongside [emoji-data](https://github.com/iamcal/emoji-data), it simplifies emoji management and usage within your applications.
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Comprehensive Emoji Data**: Access a vast array of emojis with detailed metadata.
+- **Skin Tone Variations**: Easily retrieve emojis with specific skin tone modifiers.
+- **Efficient Searching**: Quickly find emojis by name or category.
+- **Image Data Retrieval**: Obtain precise image positioning data for custom rendering.
 
-```bash
-ng generate component component-name
+## Installation
+
+Install the package via npm:
+
+`npm install @rahul-28/emojify`
+
+## Usage
+
+Import and utilize the EmojiData class in your TypeScript project:
+
+```ts
+import EmojiData from '@rahul-28/emojify';
+
+const emoji = new EmojiData();
+
+const emojiInfo = emoji.getImageData('smile');
+console.log(emojiInfo);
+// Output: { x: 53.333333333333336, y: 83.33333333333334, sheetSizeX: 6100, sheetSizeY: 6100, image: '1f604.png'}
+
+console.log(temp.getEmojiByName('heart_eyes'));
+// Output: {
+//   name: 'SMILING FACE WITH HEART-SHAPED EYES',
+//   unified: '1F60D',
+//   image: '1f60d.png',
+//   sheet_x: 32,
+//   sheet_y: 59,
+//   short_name: 'heart_eyes',
+//   short_names: [ 'heart_eyes' ],
+//   category: 'Smileys & Emotion',
+//   subcategory: 'face-affection',
+//   char: '😍'
+// }
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Upgrading Emoji Data
 
-```bash
-ng generate --help
-```
+To update the underlying emoji dataset to the latest version:
+Check and update the following:
 
-## Building
+- "dependencies": { "emoji-datasource": "^15.1.2"}
+  // install latest emoji-dataset
+- npm run emoji-build
+  // updates the local emoji-dataset
+- export const sheetColumns = 61 && export const sheetRows = 61;
+  // update the sheet dimensions according to current version
 
-To build the library, run:
+## Issues
 
-```bash
-ng build emojify
-```
-
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
-
-### Publishing the Library
-
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-
-   ```bash
-   cd dist/emojify
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+If you encouter any issues or bugs please report it [here](https://github.com/Rahul-28/emojify/issues). Feel free to suggest any solutions or work-arounds for others too.
