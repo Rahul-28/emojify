@@ -20,7 +20,7 @@ Install the package via npm:
 Import and utilize the EmojiData class in your TypeScript project:
 
 ```ts
-import EmojiData from '@rahul-28/emojify';
+import { EmojiData } from '@rahul-28/emojify';
 
 const emoji = new EmojiData();
 
