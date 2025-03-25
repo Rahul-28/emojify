@@ -1,9 +1,9 @@
 {
-  "name": "@rahul-28/emojify",
+  "name": "@rahul/emojify",
   "version": "1.0.0",
   "scripts": {
     "build": "ng build",
-    "ci": "npm run build && npm run prettier:check",
+    "ci": "npm run prettier:check && npm run build",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci",
     "prettier:format": "prettier --write .",
