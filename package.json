@@ -1,5 +1,5 @@
 {
-  "name": "@rahul/emojify",
+  "name": "@rahul-28/emojify",
   "version": "1.0.0",
   "scripts": {
     "build": "ng build",

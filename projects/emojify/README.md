@@ -13,14 +13,14 @@ Enhance your TypeScript projects with seamless emoji integration using this comp
 
 Install the package via npm:
 
-`npm install @rahul/emojify`
+`npm install @rahul-28/emojify`
 
 ## Usage
 
 Import and utilize the EmojiData class in your TypeScript project:
 
 ```ts
-import { EmojiData } from '@rahul/emojify';
+import { EmojiData } from '@rahul-28/emojify';
 
 const emoji = new EmojiData();
 
