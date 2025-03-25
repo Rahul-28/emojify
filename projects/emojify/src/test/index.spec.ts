@@ -1,7 +1,7 @@
 import emojiData from '../lib/data-source/emoji.json';
 import { type IEmoji } from '../lib/data-source/emoji-data.models';
 import { sheetColumns, sheetRows } from '../lib/data-source/index';
-import EmojiData from '../lib/data-source/index';
+import { EmojiData } from '../lib/data-source/index';
 import { describe, test, expect } from 'vitest';
 import { multiplyPos } from './util';
 
